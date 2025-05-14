@@ -8,5 +8,6 @@ import java.util.List;
 public class UserDTO {
     private String username;
     private String password;
-    private List<String> roles;
+    private Long employeeId;
+    private String roles;
 }

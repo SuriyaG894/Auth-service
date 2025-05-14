@@ -38,4 +38,9 @@ public class AuthController {
         System.out.println("Displaying check completed");
         return new ResponseEntity<>("Displaying check completed", HttpStatus.OK);
     }
+
+    @PostMapping("/register")
+    public ResponseEntity<?> regsiter(@RequestBody Employee employee){
+        return userClient.register(employee);
+    }
 }
